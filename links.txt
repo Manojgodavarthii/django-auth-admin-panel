@@ -1,0 +1,10 @@
+
+Login: http://127.0.0.1:8000/
+Register: http://127.0.0.1:8000/register/
+User Dashboard: http://127.0.0.1:8000/user/home/
+Admin Panel: http://127.0.0.1:8000/adminpanel/
+Django Admin: http://127.0.0.1:8000/django-admin/
+
+
+9876543210    Admin@123
+7793932030   Manoj@5

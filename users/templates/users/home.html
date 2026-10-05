@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>User Dashboard</h1>
+
+    <h2>
+        Welcome, {{ request.user.name }}
+    </h2>
+
+    <div class="profile">
+        <p>
+            <strong>Name:</strong>
+            {{ request.user.name }}
+        </p>
+
+        <p>
+            <strong>Mobile:</strong>
+            {{ request.user.mobile }}
+        </p>
+
+        <p>
+            <strong>Role:</strong>
+            {{ request.user.role }}
+        </p>
+
+        <p>
+            <strong>Created:</strong>
+            {{ request.user.created_at }}
+        </p>
+    </div>
+
+    <a href="{% url 'edit_profile' %}">
+        <button>
+            Edit Profile
+        </button>
+    </a>
+
+    <a href="{% url 'logout' %}">
+        <button>
+            Logout
+        </button>
+    </a>
+</div>
+{% endblock %}
